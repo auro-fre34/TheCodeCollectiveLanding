@@ -5,6 +5,42 @@ body {
     min-height: 100vh;
 }
 
+/* Media Query para dispositivos pequeños */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* Reduce el tamaño de fuente en pantallas pequeñas */
+    }
+
+    header {
+        flex-direction: column;
+        /* Cambia el diseño de flexbox para pantallas pequeñas */
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        /* Hace que el botón ocupe todo el ancho en pantallas pequeñas */
+        font-size: 14px;
+    }
+}
+
+/* Media Query para dispositivos muy pequeños (como teléfonos en modo vertical) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        /* Reduce más el tamaño de fuente */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
 footer {
     display: flex;
     flex-direction: column;
